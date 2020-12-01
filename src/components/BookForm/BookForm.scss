@@ -1,0 +1,120 @@
+.Booking {
+  width: 280px;
+  margin: 0 auto;
+  &__form {
+    &-header {
+      position: relative;
+      text-align: center;
+      font-family: 'Banny Bold Round';
+      font-size: 34px;
+      line-height: 40px;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+      padding-bottom: 30px;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 56px;
+        height: 4px;
+        background-color: #e8c300;
+        border-radius: 46px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        margin-top: 16px;
+      }
+    }
+    &-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+    &-item {
+      width: 100%;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 18px;
+      &-input {
+        width: 100%;
+        color: #33333380;
+        background-color: #e5e5e5;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-indent: 18px;
+        padding: 18px 24px 18px 0;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        &::-webkit-input-placeholder {
+          color: #33333380;
+          -webkit-box-align: center;
+          align-items: center;
+          text-indent: 18px;
+        }
+        &::-moz-placeholder {
+          color: #33333380;
+          align-items: center;
+          text-indent: 18px;
+        }
+        &:-ms-input-placeholder {
+          color: #33333380;
+          -ms-flex-align: center;
+          align-items: center;
+          text-indent: 18px;
+        }
+        &::-ms-input-placeholder {
+          color: #33333380;
+          -ms-flex-align: center;
+          align-items: center;
+          text-indent: 18px;
+        }
+        &::placeholder {
+          color: #33333380;
+          -webkit-box-align: center;
+          -ms-flex-align: center;
+          align-items: center;
+          text-indent: 18px;
+        }
+      }
+    }
+    &-button {
+      width: 100%;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 12px;
+      line-height: 18px;
+      text-transform: uppercase;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      background-color: #e8c300;
+      border: none;
+      border-radius: 5px;
+      padding: 18px 24px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(../../assets/img/path-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position-x: 90%;
+  cursor: pointer;
+}

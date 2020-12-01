@@ -1,0 +1,18 @@
+.Timer {
+  /* or 0% */
+  width: 240px;
+  // display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 80px auto 0;
+  text-transform: uppercase;
+  background-color: rgba(196, 196, 196, 0.3);
+  &__countdown {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    // line-height: 0px;
+    color: #fffefe;
+  }
+}

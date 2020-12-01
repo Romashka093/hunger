@@ -1,0 +1,28 @@
+.DesktopMenue {
+  // background-image: url(../../assets/img/sections-background/header-bg.png);
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: center;
+  &__navigation {
+    // width: 280px;
+    &-list {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      &-item {
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 11.1823px;
+        line-height: 17px;
+        // color: #ffffff;
+        text-transform: uppercase;
+        padding: 10px;
+        &-link {
+          text-decoration: none;
+          color: white;
+        }
+      }
+    }
+  }
+}

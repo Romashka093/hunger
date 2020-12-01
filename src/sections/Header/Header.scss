@@ -1,0 +1,116 @@
+.Header {
+  background-image: url(../../assets/img/sections-background/header-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 24px;
+  margin-bottom: 64px;
+  &__container {
+    min-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.Header > .Header__container {
+  position: relative;
+  align-self: center;
+  min-height: 50px;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: -24px;
+    width: 1px;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  &::before {
+    left: 8px;
+  }
+  &::after {
+    right: 8px;
+  }
+}
+
+.Main {
+  padding-top: 40px;
+  &__header {
+    position: relative;
+    text-align: center;
+    font-family: 'Banny Bold Round';
+    font-size: 34px;
+    line-height: 40px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 30px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 56px;
+      height: 4px;
+      background-color: #e8c300;
+      border-radius: 46px;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+      margin-top: 16px;
+    }
+    &-name {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 8px;
+      line-height: 13px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.5em;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+  }
+  &__buttons {
+    text-align: center;
+    &-action {
+      width: 124px;
+      height: 36px;
+      margin: 0 8px 48px;
+      padding: 8px 0 8px;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 10px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #ffffff;
+      border-radius: 5px;
+      background-color: #e8c300;
+      outline: none;
+      border: none;
+      &:nth-child(2) {
+        background-color: transparent;
+        border: 1px solid #ffffff80;
+      }
+    }
+    &-container {
+      width: 280px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.Down {
+  text-align: center;
+  &__btn {
+    background-image: url(../../assets/img/down-btn.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 56px;
+    height: 56px;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin-bottom: 64px;
+  }
+}
