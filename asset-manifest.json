@@ -1,22 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.8a17c384.chunk.css",
-    "main.js": "/static/js/main.f31af1ae.chunk.js",
-    "main.js.map": "/static/js/main.f31af1ae.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7797bd7b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7797bd7b.js.map",
-    "static/js/2.2112c314.chunk.js": "/static/js/2.2112c314.chunk.js",
-    "static/js/2.2112c314.chunk.js.map": "/static/js/2.2112c314.chunk.js.map",
-    "static/js/3.9ee6f254.chunk.js": "/static/js/3.9ee6f254.chunk.js",
-    "static/js/3.9ee6f254.chunk.js.map": "/static/js/3.9ee6f254.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.8a17c384.chunk.css.map": "/static/css/main.8a17c384.chunk.css.map",
-    "static/js/2.2112c314.chunk.js.LICENSE.txt": "/static/js/2.2112c314.chunk.js.LICENSE.txt"
+    "main.css": "/hunger/static/css/main.2342c676.chunk.css",
+    "main.js": "/hunger/static/js/main.3f7802ba.chunk.js",
+    "main.js.map": "/hunger/static/js/main.3f7802ba.chunk.js.map",
+    "runtime-main.js": "/hunger/static/js/runtime-main.683842ed.js",
+    "runtime-main.js.map": "/hunger/static/js/runtime-main.683842ed.js.map",
+    "static/js/2.c9d1c276.chunk.js": "/hunger/static/js/2.c9d1c276.chunk.js",
+    "static/js/2.c9d1c276.chunk.js.map": "/hunger/static/js/2.c9d1c276.chunk.js.map",
+    "static/js/3.1b619338.chunk.js": "/hunger/static/js/3.1b619338.chunk.js",
+    "static/js/3.1b619338.chunk.js.map": "/hunger/static/js/3.1b619338.chunk.js.map",
+    "index.html": "/hunger/index.html",
+    "static/css/main.2342c676.chunk.css.map": "/hunger/static/css/main.2342c676.chunk.css.map",
+    "static/js/2.c9d1c276.chunk.js.LICENSE.txt": "/hunger/static/js/2.c9d1c276.chunk.js.LICENSE.txt",
+    "static/media/main.scss": "/hunger/static/media/open-sans-v18-latin-regular.f57a62e9.woff2",
+    "static/media/Header.scss": "/hunger/static/media/header-bg.b58de38c.png",
+    "static/media/facebook.d02072d5.svg": "/hunger/static/media/facebook.d02072d5.svg",
+    "static/media/instagram.cbe58dda.svg": "/hunger/static/media/instagram.cbe58dda.svg",
+    "static/media/logo.ce37ee5f.svg": "/hunger/static/media/logo.ce37ee5f.svg",
+    "static/media/BookForm.scss": "/hunger/static/media/path-down.b40ae022.svg",
+    "static/media/twitter.d63b03c4.svg": "/hunger/static/media/twitter.d63b03c4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.7797bd7b.js",
-    "static/js/2.2112c314.chunk.js",
-    "static/css/main.8a17c384.chunk.css",
-    "static/js/main.f31af1ae.chunk.js"
+    "static/js/runtime-main.683842ed.js",
+    "static/js/2.c9d1c276.chunk.js",
+    "static/css/main.2342c676.chunk.css",
+    "static/js/main.3f7802ba.chunk.js"
   ]
 }
