@@ -60,7 +60,7 @@
       font-family: Open Sans;
       font-style: normal;
       font-weight: bold;
-      font-size: 8px;
+      font-size: 11px;
       line-height: 13px;
       align-items: center;
       text-align: center;
@@ -112,5 +112,65 @@
     outline: none;
     border: none;
     margin-bottom: 64px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Main {
+    padding-top: 40px;
+    &__header {
+      position: relative;
+      text-align: center;
+      font-family: 'Banny Bold Round';
+      font-size: 34px;
+      line-height: 40px;
+      text-transform: uppercase;
+      color: #ffffff;
+      margin-bottom: 30px;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 56px;
+        height: 4px;
+        background-color: #e8c300;
+        border-radius: 46px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        margin-top: 16px;
+      }
+      &-name {
+        font-size: 11px;
+      }
+    }
+    &__buttons {
+      // text-align: center;
+      // &-action {
+      //   width: 124px;
+      //   height: 36px;
+      //   margin: 0 8px 48px;
+      //   padding: 8px 0 8px;
+      //   font-family: Open Sans;
+      //   font-style: normal;
+      //   font-weight: bold;
+      //   font-size: 10px;
+      //   line-height: 16px;
+      //   text-transform: uppercase;
+      //   color: #ffffff;
+      //   border-radius: 5px;
+      //   background-color: #e8c300;
+      //   outline: none;
+      //   border: none;
+      //   &:nth-child(2) {
+      //     background-color: transparent;
+      //     border: 1px solid #ffffff80;
+      //   }
+      // }
+      &-container {
+        width: 680px;
+        margin: 0 auto;
+      }
+    }
   }
 }

@@ -1,0 +1,24 @@
+.Control {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100px;
+  &__item {
+    //
+    margin: 10px;
+    &-button {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      background-color: #ffffff80;
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: #fff;
+      }
+    }
+  }
+}

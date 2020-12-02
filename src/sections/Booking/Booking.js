@@ -1,13 +1,18 @@
 import React from 'react';
+import { useMediaPredicate } from 'react-media-hook';
 import BookForm from '../../components/BookForm/BookForm';
+import image from '../../assets/img/slides/about-img.png';
+import SectionPicture from '../../components/SectionPicture/SectionPicture';
 import languages from '../../languages';
 import './Booking.scss';
 
 function Booking({ handlerFormSubmit }) {
+  const tablet = useMediaPredicate('(min-width: 1024px)');
   return (
     <>
       <section id={languages.eng.booking} className="Booking">
         <BookForm handlerFormSubmit={handlerFormSubmit} />
+        {tablet && <SectionPicture image={image} left={false} />}
         <div className="Booking__contacts">
           <p>
             {languages.eng.workingWeekDays}{' '}

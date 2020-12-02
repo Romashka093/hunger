@@ -7,10 +7,10 @@ function Specialty({ specialty }) {
   return (
     <ul className="Specialty">
       <li className="Specialty__item" key={id}>
-        <article>
-          <h3>{title}</h3>
-          <p>{descriptions}</p>
-          <p>{text}</p>
+        <article className="Specialty__item-article">
+          <h3 className="Specialty__item-header">{title}</h3>
+          <p className="Specialty__item-descriptions">{descriptions}</p>
+          <p className="Specialty__item-text">{text}</p>
         </article>
       </li>
     </ul>

@@ -1,8 +1,8 @@
 import React from 'react';
 import languages from '../../languages';
 import logo from '../../assets/img/logo.svg';
-import './MobileMenu.scss';
 import Menu from './Menu/Menu';
+import './MobileMenu.scss';
 
 function MobileMenu({ handleOpenMenu, isOpenMenu }) {
   return (

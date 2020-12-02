@@ -37,13 +37,6 @@ export default {
   beer: 'beer',
   drinks: 'drinks',
 
-  //for pizza menu section
-  dots: '....',
-  dishName: 'pizza quatro stagioni',
-  dishPrice: '55,68',
-  dishPriceCurrency: 'USD',
-  dishDescriptions: 'Integer ullamcorper neque eu purus euismod',
-
   //button titles
   bookTable: 'book table',
   bookNow: 'book now',

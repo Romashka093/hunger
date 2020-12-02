@@ -5,11 +5,15 @@ function Controls({ specialties, handleChangeSlide }) {
   return (
     <>
       {specialties.length && (
-        <ul>
+        <ul className="Control">
           {specialties.map((item, index) => {
             return (
-              <li key={item.id} id={index} onClick={handleChangeSlide}>
-                {item.title}
+              <li
+                className="Control__item"
+                key={item.id}
+                onClick={handleChangeSlide}
+              >
+                <button id={index} className="Control__item-button"></button>
               </li>
             );
           })}

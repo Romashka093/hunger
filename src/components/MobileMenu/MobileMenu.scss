@@ -1,7 +1,4 @@
 .Navigation {
-  // background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-  // width: 280px;
-  // margin-top: 32px;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   padding: 8px 0;
@@ -80,7 +77,6 @@
 }
 
 .Main {
-  // margin-bottom: 30px;
   padding-top: 40px;
   &__header {
     position: relative;
@@ -108,7 +104,7 @@
       font-family: Open Sans;
       font-style: normal;
       font-weight: bold;
-      font-size: 8px;
+      font-size: 11px;
       line-height: 13px;
       align-items: center;
       text-align: center;
@@ -118,10 +114,6 @@
     }
   }
   &__buttons {
-    // width: 50%;
-    // margin: 0 auto;
-    // display: flex;
-    // align-items: center;
     text-align: center;
     &-action {
       width: 124px;

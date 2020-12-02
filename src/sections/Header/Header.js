@@ -7,12 +7,12 @@ import Timer from '../../components/Timer/Timer';
 import './Header.scss';
 
 function Header({ handleOpenMenu, isOpenMenu, minutes, seconds }) {
-  const desktop = useMediaPredicate('(min-width: 1280px)');
+  const tablet = useMediaPredicate('(min-width: 1024px)');
   return (
     <>
       <header className="Header">
         <div className="Header__container">
-          {!desktop ? (
+          {!tablet ? (
             <MobileMenu
               isOpenMenu={isOpenMenu}
               handleOpenMenu={handleOpenMenu}

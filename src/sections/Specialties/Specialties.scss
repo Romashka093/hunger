@@ -1,0 +1,39 @@
+.Specialties {
+  background-image: url(../../assets/img/sections-background/specialties-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 64px;
+  color: white;
+  &__container {
+    width: 290px;
+    margin: 0 auto;
+  }
+  &__header {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 40px 0;
+  }
+}
+
+@media (min-width: 768px) {
+  .Specialties {
+    padding-top: 24px;
+    margin-bottom: 64px;
+    &__container {
+      width: 280px;
+      margin: 0 auto;
+    }
+    &__header {
+      font-size: 11px;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.Events {
+  background-image: url(../../assets/img/sections-background/specialties-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  &__header {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 13px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 40px 0;
+  }
+  &__contacts {
+    width: 280px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 45px 0;
+    &-numbers {
+      display: flex;
+      flex-direction: column;
+      &-link {
+        font-weight: bold;
+        color: rgba(255, 255, 255, 0.5);
+      }
+    }
+  }
+}

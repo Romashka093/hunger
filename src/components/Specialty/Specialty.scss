@@ -1,3 +1,44 @@
 .Specialty {
-  //
+  text-align: center;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffffe6;
+  margin: 0 auto;
+  &__item {
+    &-article {
+      //
+    }
+    &-header {
+      position: relative;
+      text-align: center;
+      font-family: 'Banny Bold Round';
+      font-size: 34px;
+      line-height: 45px;
+      text-transform: uppercase;
+      margin: 30px 0;
+      padding-bottom: 30px;
+      &::after {
+        position: absolute;
+        content: '';
+        width: 56px;
+        height: 4px;
+        background-color: #e8c300;
+        border-radius: 46px;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%);
+        margin-top: 40px;
+      }
+    }
+    &-descriptions {
+      //
+    }
+    &-text {
+      font-weight: 400;
+    }
+  }
 }

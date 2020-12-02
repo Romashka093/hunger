@@ -1,69 +1,22 @@
-import React, { Component } from 'react';
-import Header from './sections/Header';
-import Booking from './sections/Booking';
-import Specialties from './sections/Specialties';
-import Menu from './sections/Menu/Menu';
-import PrivateEvents from './sections/PrivateEvents';
+import React from 'react';
+import routes from './routes';
+import { Route, Switch, Redirect } from 'react-router-dom';
+import Hunger from './page/Hunger';
 
-class App extends Component {
-  state = {
-    isOpenMenu: false,
-    minutes: 14,
-    seconds: 0,
-    initialValue: 0,
-  };
-
-  componentDidMount() {
-    this.timeInterval = setInterval(() => {
-      const { seconds, minutes } = this.state;
-
-      if (seconds > 0) {
-        this.setState(({ seconds }) => ({
-          seconds: seconds - 1,
-        }));
-      }
-      if (seconds === 0) {
-        if (minutes === 0) {
-          clearInterval(this.timeInterval);
-        } else {
-          this.setState(({ minutes }) => ({
-            minutes: minutes - 1,
-            seconds: 59,
-          }));
-        }
-      }
-    }, 1000);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timeInterval);
-  }
-  handlerFormSubmit = data => {
-    console.log('form data: ', data);
-  };
-  handleOpenMenu = evt => {
-    if (evt.target) {
-      this.setState({ isOpenMenu: !this.state.isOpenMenu });
-    }
-  };
-  render() {
-    const { isOpenMenu, minutes, seconds, initialValue } = this.state;
-
-    return (
-      <>
-        <Header
-          minutes={minutes}
-          seconds={seconds}
-          isOpenMenu={isOpenMenu}
-          handleOpenMenu={this.handleOpenMenu}
-        />
-        <Booking handlerFormSubmit={this.handlerFormSubmit} />
-        <Specialties step={1} initialValue={initialValue} />
-        <Menu />
-        <PrivateEvents />
-      </>
-    );
-  }
+function App() {
+  return (
+    <Switch>
+      <Route path={routes.main} exact component={Hunger} />
+      <Route path={routes.main} component={Hunger} />
+      <Route path={routes.pizza} component={Hunger} />
+      <Route path={routes.pasta} component={Hunger} />
+      <Route path={routes.desert} component={Hunger} />
+      <Route path={routes.wine} component={Hunger} />
+      <Route path={routes.beer} component={Hunger} />
+      <Route path={routes.drinks} component={Hunger} />
+      <Redirect to={routes.main} />
+    </Switch>
+  );
 }
 
 export default App;

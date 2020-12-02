@@ -1,0 +1,31 @@
+.Menu__item {
+  margin-bottom: 30px;
+  &-dish {
+    display: flex;
+    justify-content: space-between;
+    &-name {
+      text-transform: uppercase;
+      white-space: nowrap;
+      overflow: hidden;
+      background-color: #ffffff;
+      text-overflow: ellipsis;
+    }
+    &-price {
+      //
+      display: flex;
+      &-space {
+        width: 6px;
+      }
+    }
+  }
+  &-description {
+    &-text {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 17px;
+      color: #33333380;
+    }
+  }
+}
