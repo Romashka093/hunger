@@ -1,8 +1,6 @@
-@import './normalize.scss';
-@import './fonts.scss';
-@import './variables.scss';
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -47,16 +45,16 @@ button:hover {
   cursor: pointer;
 }
 
+input:focus,
+button:focus,
 select:focus,
-button:focus {
+a:focus {
   outline: none;
 }
 
-input:focus,
 input:active,
 button:active,
-button:focus,
-select:focus,
-select:active {
+select:active,
+a:active {
   outline: none;
 }

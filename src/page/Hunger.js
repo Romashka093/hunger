@@ -5,6 +5,7 @@ import Booking from '../sections/Booking';
 import Specialties from '../sections/Specialties';
 import Menu from '../sections/Menu/Menu';
 import PrivateEvents from '../sections/PrivateEvents';
+import './Hunger.scss';
 
 class Hunger extends Component {
   state = {
@@ -54,16 +55,20 @@ class Hunger extends Component {
 
     return (
       <>
-        <Header
-          minutes={minutes}
-          seconds={seconds}
-          isOpenMenu={isOpenMenu}
-          handleOpenMenu={this.handleOpenMenu}
-        />
-        <Booking handlerFormSubmit={this.handlerFormSubmit} />
-        <Specialties step={1} initialValue={initialValue} />
-        <Menu menu={menuList} />
-        <PrivateEvents />
+        <main className="Wrapper">
+          <div className="Wrapper__container">
+            <Header
+              minutes={minutes}
+              seconds={seconds}
+              isOpenMenu={isOpenMenu}
+              handleOpenMenu={this.handleOpenMenu}
+            />
+            <Booking handlerFormSubmit={this.handlerFormSubmit} />
+            <Specialties step={1} initialValue={initialValue} />
+            <Menu menu={menuList} />
+            <PrivateEvents />
+          </div>
+        </main>
       </>
     );
   }

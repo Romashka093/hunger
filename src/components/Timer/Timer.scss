@@ -1,15 +1,35 @@
 .Timer {
   width: 240px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   text-align: center;
   margin: 80px auto 0;
   text-transform: uppercase;
-  background-color: rgba(196, 196, 196, 0.3);
+  background-color: #c4c4c44d;
   &__countdown {
     font-family: Open Sans;
     font-style: normal;
     font-weight: bold;
     font-size: 40px;
     color: #fffefe;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Timer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 116px auto 0;
+    &__countdown {
+      padding: 8px 0;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .Timer {
+    margin: 108px auto 0;
   }
 }

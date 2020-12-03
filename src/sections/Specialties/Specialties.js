@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import specialties from '../../helpers/specialties.json';
 import languages from '../../languages';
+import specialties from '../../helpers/specialties.json';
 import image from '../../assets/img/slides/slide-img.png';
-import Specialty from '../../components/Specialty/Specialty';
-import Controls from '../../components/Controls/Controls';
-import SectionPicture from '../../components/SectionPicture/SectionPicture';
+import Specialty from '../../components/Specialty';
+import Controls from '../../components/Controls';
+import SectionPicture from '../../components/SectionPicture';
 import './Specialties.scss';
 
 class Specialties extends Component {

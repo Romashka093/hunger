@@ -1,13 +1,16 @@
 .Image {
   &__wrapper {
-    //
     position: relative;
     width: 280px;
   }
   &-content {
     width: 200px;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
   }
   &-hover-left {
@@ -15,7 +18,9 @@
     width: 120px;
     height: 120px;
     border: 18px solid #e8c300;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-filter: drop-shadow(0px 0px 93px #000000);
     filter: drop-shadow(0px 0px 93px #000000);
     border-radius: 5px;
     top: 20%;
@@ -26,10 +31,108 @@
     width: 120px;
     height: 120px;
     border: 18px solid #e8c300;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-filter: drop-shadow(0px 0px 93px #000000);
     filter: drop-shadow(0px 0px 93px #000000);
     border-radius: 5px;
     top: 20%;
     right: 0;
+  }
+  &-title {
+    display: inline;
+    border-radius: 5px 0px 0px 5px;
+    &-left,
+    &-right {
+      position: absolute;
+      content: '';
+      height: 16%;
+      width: 60%;
+      bottom: 42%;
+      background-color: #000000;
+      font-family: 'Banny Light Round';
+      font-size: 14px;
+      line-height: 11px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      text-indent: 19px;
+      text-transform: uppercase;
+      color: #ffffff;
+    }
+    &-left {
+      -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg);
+      right: -4%;
+    }
+    &-right {
+      -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      transform: rotate(270deg);
+      left: -4%;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .Image {
+    &__wrapper {
+      width: 340px;
+      z-index: 25;
+    }
+    &-content {
+      width: 340px;
+    }
+    &-hover-left {
+      width: 170px;
+      height: 170px;
+      top: 28%;
+      left: -14%;
+    }
+    &-hover-right {
+      width: 170px;
+      height: 170px;
+      top: 28%;
+      right: -14%;
+    }
+    &-title {
+      &-left,
+      &-right {
+        height: 16%;
+        width: 83%;
+        font-size: 22px;
+      }
+      &-left {
+        right: -25%;
+      }
+      &-right {
+        left: -25%;
+      }
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .Image {
+    &__wrapper {
+      width: 440px;
+    }
+    &-content {
+      width: 440px;
+    }
+    &-hover-left {
+      width: 210px;
+      height: 210px;
+      top: 26%;
+    }
+    &-hover-right {
+      width: 210px;
+      height: 210px;
+      top: 26%;
+    }
   }
 }

@@ -16,24 +16,18 @@ function DesktopMenue() {
               >
                 {languages.eng.home}
               </a>
-            </li>
-            <li className="DesktopMenue__navigation-list-item">
               <a
                 className="DesktopMenue__navigation-list-item-link"
                 href={`#${languages.eng.about}`}
               >
                 {languages.eng.about}
               </a>
-            </li>
-            <li className="DesktopMenue__navigation-list-item">
               <a
                 className="DesktopMenue__navigation-list-item-link"
                 href={`#${languages.eng.team}`}
               >
                 {languages.eng.team}
               </a>
-            </li>
-            <li className="DesktopMenue__navigation-list-item">
               <a
                 className="DesktopMenue__navigation-list-item-link"
                 href={`#${languages.eng.booking}`}
@@ -41,7 +35,7 @@ function DesktopMenue() {
                 {languages.eng.booking}
               </a>
             </li>
-            <h1>
+            <h1 className="DesktopMenue__navigation-logo">
               <a href={`#${languages.eng.home}`}>
                 <img src={logo} alt="" width="140" height="140" />
               </a>
@@ -53,24 +47,18 @@ function DesktopMenue() {
               >
                 {languages.eng.menu}
               </a>
-            </li>
-            <li className="DesktopMenue__navigation-list-item">
               <a
                 className="DesktopMenue__navigation-list-item-link"
                 href={`#${languages.eng.galerie}`}
               >
                 {languages.eng.galerie}
               </a>
-            </li>
-            <li className="DesktopMenue__navigation-list-item">
               <a
                 className="DesktopMenue__navigation-list-item-link"
                 href={`#${languages.eng.events}`}
               >
                 {languages.eng.events}
               </a>
-            </li>
-            <li className="DesktopMenue__navigation-list-item">
               <a
                 className="DesktopMenue__navigation-list-item-link"
                 href={`#${languages.eng.contact}`}

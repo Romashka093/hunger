@@ -1,9 +1,11 @@
 import React from 'react';
 import languages from '../../languages';
 import { useMediaPredicate } from 'react-media-hook';
-import DesktopMenue from '../../components/DesktopMenue/DesktopMenue';
-import MobileMenu from '../../components/MobileMenu/MobileMenu';
-import Timer from '../../components/Timer/Timer';
+import DesktopMenue from '../../components/DesktopMenue';
+import MobileMenu from '../../components/MobileMenu';
+import Timer from '../../components/Timer';
+import WorkingHours from '../../components/WorkingHours';
+import SocialIcons from '../../components/SocialIcons';
 import './Header.scss';
 
 function Header({ handleOpenMenu, isOpenMenu, minutes, seconds }) {
@@ -22,6 +24,7 @@ function Header({ handleOpenMenu, isOpenMenu, minutes, seconds }) {
           )}
         </div>
         <Timer minutes={minutes} seconds={seconds} />
+
         <section id={`#${languages.eng.home}`} className="Main">
           <p className="Main__header-name">{languages.eng.restaurant}</p>
           <h2 className="Main__header">{languages.eng.restaurantName}</h2>
@@ -35,6 +38,11 @@ function Header({ handleOpenMenu, isOpenMenu, minutes, seconds }) {
               </button>
             </div>
           </div>
+          {tablet && (
+            <div className="Main__social">
+              <WorkingHours /> <SocialIcons />
+            </div>
+          )}
         </section>
         <div className="Down">
           <a href={`#${languages.eng.booking}`}>

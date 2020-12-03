@@ -1,10 +1,10 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import MenuNavigation from '../../components/MenuNavigation/MenuNavigation';
 import languages from '../../languages';
 import routes from '../../routes';
+import MenuNavigation from '../../components/MenuNavigation';
+import MenuList from '../../components/MenuList';
 import './Menu.scss';
-import MenuList from '../../components/MenuList/MenuList';
 
 function Menu({ menu }) {
   return (

@@ -1,8 +1,8 @@
 import React from 'react';
 import languages from '../../../languages';
-import facebook from '../../../assets/img/social/facebook.svg';
-import twitter from '../../../assets/img/social/twitter.svg';
-import instagram from '../../../assets/img/social/instagram.svg';
+import SocialIcons from '../../SocialIcons';
+import WorkingHours from '../../WorkingHours';
+
 import './Menu.scss';
 
 function Menu({ isOpenMenu, handleOpenMenu }) {
@@ -80,41 +80,8 @@ function Menu({ isOpenMenu, handleOpenMenu }) {
                 {languages.eng.contact}
               </a>
             </li>
-            <ul className="Social">
-              <li className="Social__icon">
-                {/* eslint-disable-next-line */}
-                <a href="https://www.facebook.com/" target="_blank">
-                  <img
-                    className="Social__icon-svg"
-                    src={facebook}
-                    alt="facebook"
-                  />
-                </a>
-              </li>
-              <li className="Social__icon">
-                {/* eslint-disable-next-line */}
-                <a href="https://twitter.com/" target="_blank">
-                  <img
-                    className="Social__icon-svg"
-                    src={twitter}
-                    alt="twitter"
-                  />
-                </a>
-              </li>
-              <li className="Social__icon">
-                {/* eslint-disable-next-line */}
-                <a href="https://www.instagram.com/" target="_blank">
-                  <img
-                    className="Social__icon-svg"
-                    src={instagram}
-                    alt="instagram"
-                  />
-                </a>
-              </li>
-            </ul>
-            <div className="Working">
-              <div className="Working__hours">{`${languages.eng.workingWeekDays} ${languages.eng.workingWeekHours}, ${languages.eng.workingWeekendsHours} ${languages.eng.workingWeekendsDays}`}</div>
-            </div>
+            <SocialIcons />
+            <WorkingHours />
           </ul>
           <div onClick={handleOpenMenu} className="Navigation__burger">
             <button name="openMenu" className="Navigation__burger-btn" />

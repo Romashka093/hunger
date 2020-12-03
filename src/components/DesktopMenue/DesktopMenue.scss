@@ -1,22 +1,114 @@
 .DesktopMenue {
-  //
+  width: 912px;
+  margin: 0 auto;
   &__navigation {
-    //
     &-list {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      align-items: center;
       text-align: center;
+      -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+      justify-content: space-between;
       &-item {
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 11.1823px;
-        line-height: 17px;
-        text-transform: uppercase;
-        padding: 10px;
+        padding: 18px 10px;
+        border-bottom: 1px solid #ffffff33;
+        margin-bottom: 78px;
         &-link {
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 12px;
+          line-height: 17px;
+          text-transform: uppercase;
+          padding: 20px 22px 32px;
           text-decoration: none;
           color: white;
+        }
+      }
+    }
+    &-logo {
+      margin: 0 20px;
+      &:hover {
+        -webkit-animation: scroll_around 2s infinite;
+        animation: scroll_around 2s infinite;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes scroll_around {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  25% {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+}
+
+@keyframes scroll_around {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  25% {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+  75% {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+  100% {
+    -webkit-transform: rotateZ(90deg);
+    transform: rotateZ(90deg);
+  }
+}
+
+@media (min-width: 1280px) {
+  .DesktopMenue {
+    width: 1140px;
+    &__navigation {
+      &-list {
+        &-item {
+          padding: 18px 19px;
+          &-link {
+            padding: 20px 34px 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .DesktopMenue {
+    width: 1424px;
+    &__navigation {
+      &-list {
+        &-item {
+          padding: 18px 34px;
+          &-link {
+            padding: 20px 48px 32px;
+          }
         }
       }
     }

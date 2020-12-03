@@ -1,11 +1,11 @@
 import React from 'react';
-import languages from '../../languages';
-import routes from '../../routes';
 import { useMediaPredicate } from 'react-media-hook';
 import { Link } from 'react-router-dom';
-import SectionPicture from '../../components/SectionPicture/SectionPicture';
+import languages from '../../languages';
+import routes from '../../routes';
 import weddings from '../../assets/img/slides/weddings-img.png';
 import corporate from '../../assets/img/slides/corporate-pzrties-img.png';
+import SectionPicture from '../../components/SectionPicture';
 import './PrivateEvents.scss';
 
 function PrivateEvents() {
@@ -13,12 +13,22 @@ function PrivateEvents() {
   return (
     <section className="Events" id={languages.eng.events}>
       <h2 className="Events__header">{languages.eng.privateEvents}</h2>
-      <Link to={routes.main}>
-        <SectionPicture image={weddings} left={true} />
-      </Link>
-      <Link to={`#${languages.eng.home}`}>
-        <SectionPicture image={corporate} left={false} />
-      </Link>
+      <div className="Events__types">
+        <Link to={routes.main}>
+          <SectionPicture
+            image={weddings}
+            left={true}
+            title={languages.eng.eventsWedding}
+          />
+        </Link>
+        <Link to={`#${languages.eng.home}`}>
+          <SectionPicture
+            image={corporate}
+            left={false}
+            title={languages.eng.eventsCorporate}
+          />
+        </Link>
+      </div>
       <div className="Events__contacts">
         <p className="Events__contacts-numbers">
           <span>{languages.eng.bookingFor}</span>{' '}

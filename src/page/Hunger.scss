@@ -1,0 +1,98 @@
+.Wrapper > .Wrapper__container {
+  position: relative;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  min-height: 50px;
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    width: 1px;
+    height: 100%;
+    background-color: #ffffff33;
+  }
+  &::before {
+    left: 12px;
+  }
+  &::after {
+    right: 12px;
+  }
+}
+
+@media (min-width: 375px) {
+  .Wrapper > .Wrapper__container {
+    &::before {
+      left: 20px;
+    }
+    &::after {
+      right: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Wrapper > .Wrapper__container {
+    &::before {
+      left: 44px;
+    }
+    &::after {
+      right: 44px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .Wrapper > .Wrapper__container {
+    &::before,
+    &::after {
+      top: 94px;
+      height: 98%;
+    }
+    &::before {
+      left: 210px;
+    }
+    &::after {
+      right: 210px;
+    }
+  }
+  .Wrapper {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      background-color: #ffffff33;
+      top: 50%;
+      left: 50%;
+      margin-right: -50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .Wrapper > .Wrapper__container {
+    &::before {
+      left: 264px;
+    }
+    &::after {
+      right: 264px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .Wrapper > .Wrapper__container {
+    &::before {
+      left: 326px;
+    }
+    &::after {
+      right: 326px;
+    }
+  }
+}

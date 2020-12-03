@@ -1,17 +1,23 @@
 .Menu__item {
   margin-bottom: 30px;
   &-dish {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     &-name {
       text-transform: uppercase;
       white-space: nowrap;
       overflow: hidden;
       background-color: #ffffff;
+      -o-text-overflow: ellipsis;
       text-overflow: ellipsis;
     }
     &-price {
-      //
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
       &-space {
         width: 6px;
@@ -27,5 +33,24 @@
       line-height: 17px;
       color: #33333380;
     }
+  }
+}
+
+@media (min-width: 768px) {
+  .Menu__item {
+    margin: 0 auto 30px;
+    width: 45%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Menu__item {
+    width: 30%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .Menu__item {
+    width: 21%;
   }
 }

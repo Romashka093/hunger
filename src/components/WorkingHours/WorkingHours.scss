@@ -1,0 +1,33 @@
+.Working {
+  &__hours {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 11px;
+    line-height: 11px;
+    color: #ffffff;
+  }
+}
+
+@media (min-width: 1024px) {
+  .Working {
+    position: absolute;
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    top: 308px;
+    left: -56px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .Working {
+    left: -42px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .Working {
+    left: -24px;
+  }
+}

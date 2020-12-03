@@ -8,9 +8,6 @@
   color: #ffffffe6;
   margin: 0 auto;
   &__item {
-    &-article {
-      //
-    }
     &-header {
       position: relative;
       text-align: center;
@@ -30,15 +27,24 @@
         top: 50%;
         left: 50%;
         margin-right: -50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         margin-top: 40px;
       }
     }
     &-descriptions {
-      //
+      margin-bottom: 16px;
     }
     &-text {
       font-weight: 400;
     }
+  }
+}
+
+@media (min-width: 1024px) {
+  .Specialty {
+    width: 572px;
+    margin: 0;
   }
 }

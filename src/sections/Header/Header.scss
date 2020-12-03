@@ -11,27 +11,6 @@
   }
 }
 
-.Header > .Header__container {
-  position: relative;
-  align-self: center;
-  min-height: 50px;
-  &::before,
-  &::after {
-    content: '';
-    position: absolute;
-    top: -24px;
-    width: 1px;
-    height: 100vh;
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  &::before {
-    left: 8px;
-  }
-  &::after {
-    right: 8px;
-  }
-}
-
 .Main {
   padding-top: 40px;
   &__header {
@@ -43,6 +22,7 @@
     text-transform: uppercase;
     color: #ffffff;
     margin-bottom: 30px;
+    padding-bottom: 30px;
     &::after {
       position: absolute;
       content: '';
@@ -53,6 +33,8 @@
       top: 50%;
       left: 50%;
       margin-right: -50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
       margin-top: 16px;
     }
@@ -62,20 +44,23 @@
       font-weight: bold;
       font-size: 11px;
       line-height: 13px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
       align-items: center;
       text-align: center;
       letter-spacing: 0.5em;
       text-transform: uppercase;
       color: #ffffff;
+      margin-bottom: 8px;
     }
   }
   &__buttons {
     text-align: center;
     &-action {
       width: 124px;
-      height: 36px;
+      height: 42px;
       margin: 0 8px 48px;
-      padding: 8px 0 8px;
+      padding: 12px 0;
       font-family: Open Sans;
       font-style: normal;
       font-weight: bold;
@@ -115,62 +100,126 @@
   }
 }
 
-@media (min-width: 768px) {
-  .Main {
+@media (min-width: 375px) {
+  .Header {
     padding-top: 40px;
+    margin-bottom: 70px;
+    &__container {
+      min-width: 375px;
+    }
+  }
+  .Main {
     &__header {
-      position: relative;
-      text-align: center;
-      font-family: 'Banny Bold Round';
-      font-size: 34px;
+      font-size: 40px;
       line-height: 40px;
-      text-transform: uppercase;
-      color: #ffffff;
-      margin-bottom: 30px;
       &::after {
-        position: absolute;
-        content: '';
-        width: 56px;
-        height: 4px;
-        background-color: #e8c300;
-        border-radius: 46px;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%);
-        margin-top: 16px;
+        margin-top: 18px;
       }
       &-name {
-        font-size: 11px;
+        margin-bottom: 18px;
       }
     }
     &__buttons {
-      // text-align: center;
-      // &-action {
-      //   width: 124px;
-      //   height: 36px;
-      //   margin: 0 8px 48px;
-      //   padding: 8px 0 8px;
-      //   font-family: Open Sans;
-      //   font-style: normal;
-      //   font-weight: bold;
-      //   font-size: 10px;
-      //   line-height: 16px;
-      //   text-transform: uppercase;
-      //   color: #ffffff;
-      //   border-radius: 5px;
-      //   background-color: #e8c300;
-      //   outline: none;
-      //   border: none;
-      //   &:nth-child(2) {
-      //     background-color: transparent;
-      //     border: 1px solid #ffffff80;
-      //   }
-      // }
+      &-action {
+        width: 144px;
+        height: 52px;
+        margin: 0 12px 48px;
+        padding: 16px 0;
+        font-size: 11px;
+        line-height: 19px;
+      }
       &-container {
-        width: 680px;
-        margin: 0 auto;
+        width: 336px;
       }
     }
+  }
+  .Down {
+    &__btn {
+      margin-bottom: 68px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Header {
+    padding-top: 40px;
+    margin-bottom: 70px;
+    &__container {
+      min-width: 680px;
+    }
+  }
+  .Main {
+    &__header {
+      font-size: 40px;
+      line-height: 40px;
+      &::after {
+        margin-top: 32px;
+      }
+      &-name {
+        margin-bottom: 26px;
+      }
+    }
+    &__buttons {
+      &-action {
+        width: 186px;
+        height: 56px;
+        margin: 0 16px 76px;
+        padding: 18px 0;
+      }
+      &-container {
+        width: 680px;
+      }
+    }
+  }
+  .Down {
+    &__btn {
+      margin-bottom: 68px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .Header {
+    padding-top: 24px;
+    &__container {
+      min-width: 912px;
+      position: relative;
+    }
+  }
+  .Main {
+    padding-top: 140px;
+    position: relative;
+    &__header {
+      font-size: 89px;
+      line-height: 64px;
+      &::after {
+        margin-top: 48px;
+      }
+      &-name {
+        margin-bottom: 26px;
+      }
+    }
+    &__buttons {
+      &-action {
+        margin: 0 18px 86px;
+      }
+      &-container {
+        width: 912px;
+      }
+    }
+    &__social {
+      width: 100%;
+    }
+  }
+  .Down {
+    &__btn {
+      margin-bottom: 78px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .Header {
+    margin-bottom: 0;
   }
 }

@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   margin-bottom: 64px;
-  color: white;
+  color: #ffffff;
   &__container {
     width: 290px;
     margin: 0 auto;
@@ -15,6 +15,8 @@
     font-weight: bold;
     font-size: 11px;
     line-height: 13px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     text-align: center;
     letter-spacing: 0.5em;
@@ -27,13 +29,47 @@
 @media (min-width: 768px) {
   .Specialties {
     padding-top: 24px;
-    margin-bottom: 64px;
     &__container {
-      width: 280px;
+      width: 680px;
       margin: 0 auto;
     }
     &__header {
       font-size: 11px;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .Specialties {
+    padding-top: 24px;
+    &__container {
+      width: 912px;
+      margin: 0 auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+    }
+    &__header {
+      font-size: 11px;
+    }
+  }
+}
+
+@media (min-width: 1280px) {
+  .Specialties {
+    &__container {
+      width: 1140px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .Specialties {
+    &__container {
+      width: 1424px;
     }
   }
 }
