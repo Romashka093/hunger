@@ -8,6 +8,7 @@
   text-align: center;
   margin: 0 auto;
   width: 100px;
+  position: relative;
   &__item {
     margin: 12px;
     &-button {
@@ -23,6 +24,77 @@
         background-color: #fff;
       }
     }
+    &-button-active {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      outline: none;
+      background-color: #ffffff;
+    }
+  }
+}
+
+.Arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  bottom: 286px;
+  &__button {
+    position: relative;
+    margin: 0 12px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    outline: none;
+    border-radius: 2px;
+    background-color: #ffffff;
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #ffffff;
+    }
+    &:disabled {
+      background-color: #ffffff80;
+      cursor: auto;
+    }
+    &-next,
+    &-prev {
+      position: absolute;
+      width: 16px;
+      height: inherit;
+      background-position: center;
+      background-repeat: no-repeat;
+      bottom: 0;
+    }
+    &-next {
+      background-image: url(../../assets/img/right-arrow.svg);
+      right: 8px;
+    }
+    &-prev {
+      background-image: url(../../assets/img/left-arrow.svg);
+      left: 8px;
+    }
+  }
+}
+
+@media (min-width: 375px) {
+  .Arrows {
+    &__button {
+      margin: 0 24px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Arrows {
+    &__button {
+      margin: 0 48px;
+    }
   }
 }
 
@@ -30,5 +102,20 @@
   .Control {
     margin: 0 auto;
     padding-bottom: 30px;
+  }
+  .Arrows {
+    bottom: 356px;
+    z-index: 99;
+    &__button {
+      margin: 0 8px;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .Arrows {
+    &__button {
+      margin: 0 32px;
+    }
   }
 }

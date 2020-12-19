@@ -14,17 +14,18 @@ class Specialties extends Component {
     image: image,
   };
 
-  // handleNextItem = () => {
-  //   this.setState(prevState => {
-  //     return { activeIndex: prevState.activeIndex + this.props.step };
-  //   });
-  // };
+  handleNextItem = () => {
+    this.setState(prevState => {
+      return { activeIndex: prevState.activeIndex + this.props.step };
+    });
+  };
 
-  // handlePrevItem = () => {
-  //   this.setState(prevState => {
-  //     return { activeIndex: prevState.activeIndex - this.props.step };
-  //   });
-  // };
+  handlePrevItem = () => {
+    this.setState(prevState => {
+      return { activeIndex: prevState.activeIndex - this.props.step };
+    });
+  };
+
   handleChangeSlide = evt => {
     this.setState({
       activeIndex: Number(evt.target.id),
@@ -39,22 +40,13 @@ class Specialties extends Component {
         <div className="Specialties__container">
           <SectionPicture image={image} left={true} />
           <Specialty specialty={specialties[activeIndex]} />
-
-          {/* <div>
-          <button onClick={this.handlePrevItem} disabled={activeIndex === 0}>
-            next
-          </button>
-          <button
-            onClick={this.handleNextItem}
-            disabled={activeIndex === specialties.length - 1}
-          >
-            prev
-          </button>
-        </div> */}
         </div>
         <Controls
           specialties={specialties}
           handleChangeSlide={this.handleChangeSlide}
+          activeIndex={activeIndex}
+          handlePrevItem={this.handlePrevItem}
+          handleNextItem={this.handleNextItem}
         />
       </section>
     );

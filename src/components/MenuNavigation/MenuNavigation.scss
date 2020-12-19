@@ -54,6 +54,16 @@
   }
 }
 
+@media (min-width: 375px) {
+  .Menu__navigation {
+    &-list {
+      &-item {
+        padding: 8px;
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .Menu__navigation {
     &-list {
