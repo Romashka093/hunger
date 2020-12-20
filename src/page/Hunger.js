@@ -14,6 +14,8 @@ class Hunger extends Component {
     seconds: 0,
     initialValue: 0,
     menuList: [],
+    isTableReserved: false,
+    guestInfo: [],
   };
 
   componentDidMount() {
@@ -43,15 +45,28 @@ class Hunger extends Component {
     clearInterval(this.timeInterval);
   }
   handlerFormSubmit = data => {
-    console.log('form data: ', data);
+    this.setState({
+      isTableReserved: !this.state.isTableReserved,
+      guestInfo: data,
+    });
+    console.log('guest Information: ', this.state.guestInfo);
   };
   handleOpenMenu = evt => {
     if (evt.target) {
+      document.body.style.overflow = 'hidden';
       this.setState({ isOpenMenu: !this.state.isOpenMenu });
     }
   };
   render() {
-    const { isOpenMenu, minutes, seconds, initialValue, menuList } = this.state;
+    const {
+      isOpenMenu,
+      minutes,
+      seconds,
+      initialValue,
+      menuList,
+      isTableReserved,
+      guestInfo,
+    } = this.state;
 
     return (
       <>
@@ -63,7 +78,11 @@ class Hunger extends Component {
               isOpenMenu={isOpenMenu}
               handleOpenMenu={this.handleOpenMenu}
             />
-            <Booking handlerFormSubmit={this.handlerFormSubmit} />
+            <Booking
+              handlerFormSubmit={this.handlerFormSubmit}
+              isTableReserved={isTableReserved}
+              guestInfo={guestInfo}
+            />
             <Specialties step={1} initialValue={initialValue} />
             <Menu menu={menuList} />
             <PrivateEvents />

@@ -11,6 +11,7 @@ class BookForm extends Component {
     people: '',
     time: '',
   };
+
   handleChange = evt => {
     const { name, value } = evt.target;
     this.setState({ [name]: value });

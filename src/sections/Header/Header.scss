@@ -59,22 +59,33 @@
     &-action {
       width: 124px;
       height: 42px;
-      margin: 0 8px 48px;
-      padding: 12px 0;
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 10px;
-      line-height: 16px;
-      text-transform: uppercase;
-      color: #ffffff;
-      border-radius: 5px;
-      background-color: #e8c300;
-      outline: none;
-      border: none;
-      &:nth-child(2) {
+      margin: 0 auto 48px;
+      &-lable {
+        padding: 12px 0;
+        color: #ffffff;
+        background-color: #e8c300;
+        border: 1px solid #e8c300;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 10px;
+        line-height: 16px;
+        text-transform: uppercase;
+        border-radius: 5px;
+        &:hover,
+        &:focus {
+          background-color: transparent;
+          border: 1px solid #ffffff80;
+        }
+      }
+      &:nth-child(2) p {
         background-color: transparent;
         border: 1px solid #ffffff80;
+        &:hover,
+        &:focus {
+          background-color: #e8c300;
+          border: 1px solid #e8c300;
+        }
       }
     }
     &-container {
@@ -123,10 +134,11 @@
       &-action {
         width: 144px;
         height: 52px;
-        margin: 0 12px 48px;
-        padding: 16px 0;
-        font-size: 11px;
-        line-height: 19px;
+        &-lable {
+          padding: 16px 0;
+          font-size: 12px;
+          line-height: 19px;
+        }
       }
       &-container {
         width: 336px;
@@ -163,10 +175,17 @@
       &-action {
         width: 186px;
         height: 56px;
-        margin: 0 16px 76px;
-        padding: 18px 0;
+        &-lable {
+          padding: 18px 0;
+        }
       }
       &-container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
         width: 680px;
       }
     }
@@ -197,14 +216,6 @@
       }
       &-name {
         margin-bottom: 26px;
-      }
-    }
-    &__buttons {
-      &-action {
-        margin: 0 18px 86px;
-      }
-      &-container {
-        width: 912px;
       }
     }
     &__social {

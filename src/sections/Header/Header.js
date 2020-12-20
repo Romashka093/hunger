@@ -29,14 +29,22 @@ function Header({ handleOpenMenu, isOpenMenu, minutes, seconds }) {
           <p className="Main__header-name">{languages.eng.restaurant}</p>
           <h2 className="Main__header">{languages.eng.restaurantName}</h2>
           <div className="Main__buttons">
-            <div className="Main__buttons-container">
-              <button className="Main__buttons-action">
-                {languages.eng.bookTable}
-              </button>
-              <button className="Main__buttons-action">
-                {languages.eng.explore}
-              </button>
-            </div>
+            <ul className="Main__buttons-container">
+              <li className="Main__buttons-action">
+                <a href={`#${languages.eng.booking}`}>
+                  <p className="Main__buttons-action-lable">
+                    {languages.eng.bookTable}
+                  </p>
+                </a>
+              </li>
+              <li className="Main__buttons-action">
+                <a href={`#${languages.eng.menu}`}>
+                  <p className="Main__buttons-action-lable">
+                    {languages.eng.explore}
+                  </p>
+                </a>
+              </li>
+            </ul>
           </div>
           {tablet && (
             <div className="Main__social">
