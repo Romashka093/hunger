@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/hunger/static/css/main.f540f604.chunk.css",
-    "main.js": "/hunger/static/js/main.1b1dc8ea.chunk.js",
-    "main.js.map": "/hunger/static/js/main.1b1dc8ea.chunk.js.map",
+    "main.css": "/hunger/static/css/main.46d6f83c.chunk.css",
+    "main.js": "/hunger/static/js/main.f371b7b2.chunk.js",
+    "main.js.map": "/hunger/static/js/main.f371b7b2.chunk.js.map",
     "runtime-main.js": "/hunger/static/js/runtime-main.52b0dea5.js",
     "runtime-main.js.map": "/hunger/static/js/runtime-main.52b0dea5.js.map",
     "static/js/2.7f6baf40.chunk.js": "/hunger/static/js/2.7f6baf40.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.b15decb4.chunk.js": "/hunger/static/js/3.b15decb4.chunk.js",
     "static/js/3.b15decb4.chunk.js.map": "/hunger/static/js/3.b15decb4.chunk.js.map",
     "index.html": "/hunger/index.html",
-    "static/css/main.f540f604.chunk.css.map": "/hunger/static/css/main.f540f604.chunk.css.map",
+    "static/css/main.46d6f83c.chunk.css.map": "/hunger/static/css/main.46d6f83c.chunk.css.map",
     "static/js/2.7f6baf40.chunk.js.LICENSE.txt": "/hunger/static/js/2.7f6baf40.chunk.js.LICENSE.txt",
     "static/media/main.scss": "/hunger/static/media/open-sans-v18-latin-regular.f57a62e9.woff2",
     "static/media/about-img.28ec3898.png": "/hunger/static/media/about-img.28ec3898.png",
@@ -29,7 +29,7 @@
   "entrypoints": [
     "static/js/runtime-main.52b0dea5.js",
     "static/js/2.7f6baf40.chunk.js",
-    "static/css/main.f540f604.chunk.css",
-    "static/js/main.1b1dc8ea.chunk.js"
+    "static/css/main.46d6f83c.chunk.css",
+    "static/js/main.f371b7b2.chunk.js"
   ]
 }
