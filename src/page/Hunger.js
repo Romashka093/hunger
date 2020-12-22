@@ -41,9 +41,19 @@ class Hunger extends Component {
     }, 1000);
   }
 
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.isOpenMenu !== this.state.isOpenMenu) {
+      if (this.state.isOpenMenu === false) {
+        document.body.style.overflow = 'scroll';
+        console.log('isOpenMenu: ', this.state.isOpenMenu);
+      }
+    }
+  }
+
   componentWillUnmount() {
     clearInterval(this.timeInterval);
   }
+
   handlerFormSubmit = data => {
     this.setState({
       isTableReserved: !this.state.isTableReserved,
@@ -51,11 +61,15 @@ class Hunger extends Component {
     });
     console.log('guest Information: ', this.state.guestInfo);
   };
+
   handleOpenMenu = evt => {
     if (evt.target) {
       document.body.style.overflow = 'hidden';
       this.setState({ isOpenMenu: !this.state.isOpenMenu });
     }
+  };
+  handleChangeStart = evt => {
+    this.setState({ isTimeBegan: !this.state.isTimeBegan });
   };
   render() {
     const {
